@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 import CoinInfo from "../components/Coin/CoinInfo/info";
 import LineChart from "../components/Coin/LineChart/lineChart";
 import PriceToggle from "../components/Coin/PriceToggle/priceToggle";

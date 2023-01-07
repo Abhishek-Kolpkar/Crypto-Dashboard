@@ -4,10 +4,12 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import { Box, createTheme, ThemeProvider } from "@mui/material";
-import "./styles.css";
+
 import Grid from "../Grid/grid";
 import List from "../List/list";
 import Button from "../../Common/Button/button";
+
+import "./styles.css";
 
 function TabsComponent({ coins, isWatchlistPage, setSearch }) {
   const [tabValue, setTabValue] = useState("grid");

@@ -1,12 +1,13 @@
+import { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import HomePage from "./pages/home";
 import DashboardPage from "./pages/dashboard";
 import CoinPage from "./pages/coin";
 import ComparePage from "./pages/compare";
 import WatchlistPage from "./pages/watchlist";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { useEffect } from "react";
 
 function App() {
   var cursor;

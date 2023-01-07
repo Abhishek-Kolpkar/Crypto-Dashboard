@@ -1,21 +1,24 @@
 import React, { useState } from "react";
-import "./styles.css";
 import TrendingUpRoundedIcon from "@mui/icons-material/TrendingUpRounded";
 import TrendingDownRoundedIcon from "@mui/icons-material/TrendingDownRounded";
-import { convertNumbers } from "../../../functions/convertNumbers";
 import { motion } from "framer-motion";
 import { Tooltip } from "@mui/material";
 import { IconButton } from "@mui/material";
 import StarBorderRoundedIcon from "@mui/icons-material/StarBorderRounded";
+import { NavLink } from "react-router-dom";
+
+import { convertNumbers } from "../../../functions/convertNumbers";
 import { addToWatchlist } from "../../../functions/addToWatchlist";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import { hasBeenAdded } from "../../../functions/hasBeenAdded";
 import { removeFromWatchlist } from "../../../functions/removeFromWatchlist";
 
+import "./styles.css";
+
 function List({ coin, delay, isWatchlistPage }) {
   const [added, setAdded] = useState(hasBeenAdded(coin.id));
   return (
-    <a href={`/coin/${coin.id}`}>
+    <NavLink to={`/coin/${coin.id}`}>
       <motion.tr
         style={{ display: isWatchlistPage && !added && "none" }}
         className="list-row"
@@ -128,7 +131,7 @@ function List({ coin, delay, isWatchlistPage }) {
           </IconButton>
         </td>
       </motion.tr>
-    </a>
+    </NavLink>
   );
 }
 

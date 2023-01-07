@@ -1,5 +1,6 @@
-import { MenuItem, Select } from "@mui/material";
 import { useState } from "react";
+import { MenuItem, Select } from "@mui/material";
+
 import "./styles.css";
 
 function SelectDays({ days, handleDaysChange, noText }) {
