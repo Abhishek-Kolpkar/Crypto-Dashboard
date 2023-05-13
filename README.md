@@ -1,23 +1,20 @@
 # CryptoTrade
+CryptoTrade is a responsive dashboard, in which users can see real-time cryptocurrency data like crypto price, crypto market cap, crypto total volume, etc.
 
-CryptoTrade is a responsive dashboard, in which user can see realtime cryptocurrency data like crypto price, crypto market-cap, crypto total-volume, etc.
+## Demo: <a href='https://crypto-trade-dash.netlify.app/'>Live Preview</a>
 
-## Tech Stack
+## Tech Stack :
+* React.js
+* CSS3
+* MUI Design
 
-**Client :** React, Material-UI, axios
+## API : <a href='https://api.coingecko.com/api/v3'>CoinGecko</a>
 
-**API :** https://api.coingecko.com/api/v3
-
-## Features
-
+## Features :
 - Light/dark mode toggle
 - Real-time data
-- Compare between crypto-currencies
-- Grid / List layout
+- Compare crypto-currencies
+- Grid / List Layout
 - Watchlist
 - Visualization through charts
 - Responsive
-
-## Demo
-
-### Watch Live - https://crypto-trade-1.netlify.app/
